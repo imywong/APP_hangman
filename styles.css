@@ -88,12 +88,10 @@ button {
           }
           #rightCol {
             float: none;
-            padding-top: 50px;
             height:70%;
           }
           #leftCol {
             float: none;
-            
             height:30%;
           }
           #questionTxt,#answerTxt{
