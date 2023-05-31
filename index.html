@@ -1,0 +1,70 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Random math test</title>
+        <meta name="description" content="Shows random math questions"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="drawHangman.js" defer></script>
+        <script src="data.js" defer></script>
+        <script src="main.js" defer></script>
+
+    </head>
+    <header>
+            <div id="player">
+                <div class="statusLabel" id="playerLabel">Player :</div>
+                <select>
+                    <option value="emma">Emma</option>
+                    <option value="sam">Sam</option>
+                  </select>
+            </div>
+            <div id="currentScore">
+                <div class="statusLabel" id="currentScoreLabel">Current Score :</div>
+                <div id="currentScoreValue">0</div>
+            </div>
+            <div id="highScore">
+                <div class="statusLabel" id="highScoreLabel">High Score :</div>
+                <div id="highScoreValue">0</div>
+            </div>
+            <div id="level">
+                <div class="statusLabel" id="levelLabel">Level :</div>
+                <div id="levelValue">0</div>
+            </div>
+    </header>
+    <body>
+        <section id="leftCol">
+            <div id="questionTxt">
+                
+                    <div id="num1">1</div> + <div id="num2">2</div> &nbsp
+            </div>
+            
+            <div id="answerTxt">
+                <!-- <label for="answer">Your Answer:</label> -->
+                <input type="number" id="answer" name="answer">
+                &nbsp
+                <div id="result"></div>
+            </div>
+            
+            
+            <button id="submitBtn" onclick="checkAnswer()"><i class="fa-solid fa-chevron-right"></i>Submit</button>
+            
+            <button id="nextQuestionBtn" onclick="nextQuestion()" disabled><i class="fa-solid fa-angles-right"></i>Next Question</button>
+            <div id="msg"></div>
+            <br/><br/>
+            <button onclick="showAnswer()"><i class="fa-solid fa-lightbulb"></i>Show Answer</button>
+            <button onclick="clearHangman()"><i class="fa-solid fa-rotate-right"></i>Clear Hangman</button>
+            
+        </section>
+        <section id="rightCol">
+            
+            <!-- <br/><br/> -->
+            <canvas id="myCanvas" width="800" height="800"></canvas>
+            <!-- <br/>
+            <br/> -->
+        </section>
+
+
+        <!-- <button id="drawButton">Draw Hangman</button> -->
+    </body>
+</html>

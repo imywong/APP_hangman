@@ -1,0 +1,97 @@
+p,div{
+    display:inline-block;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:1rem;
+    background-color: lightgray;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+  width: 50%;
+  float: left;
+}
+
+#questionTxt,#answerTxt{
+    font-size: 5rem;
+}
+
+input[name="answer"] {
+    font-size: 5rem; 
+    width: 10rem; 
+    height: 4rem; 
+  }
+
+#msg{
+    font-size: 2rem;;
+}
+
+#myCanvas {
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    section{
+        width: 100%;
+      }
+      #rightCol {
+        float: none;
+        height:70%;
+      }
+      #leftCol {
+        float: none;
+        height:30%;
+      }
+    }
+
+/* button{
+border: 0.5px solid black;
+padding:0.5rem 1rem;
+border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(184, 253, 184);
+} */
+
+
+button {
+    font-size: 1.2rem;
+    background: #ffc;
+    border: 2px solid #fc0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background: #fc0;
+    }
+    
+    #submitBtn {
+    /* background-image: url(/images/submit.png); */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    /* padding-left: 40px;  */
+    }
+    
+    #nextQuestionBtn {
+    /* background-image: url(/images/next.png); */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    /* padding-left: 40px;  */
+    }
+      
+    i {
+        padding-right: 0.5rem;
+      }
