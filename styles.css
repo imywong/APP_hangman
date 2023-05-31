@@ -39,38 +39,6 @@ input[name="answer"] {
     width: 100%;
 }
 
-@media (max-width: 700px) {
-    section{
-        width: 100%;
-      }
-      #rightCol {
-        float: none;
-        padding-top: 50px;
-        height:70%;
-      }
-      #leftCol {
-        float: none;
-        
-        height:30%;
-      }
-      #questionTxt,#answerTxt{
-        font-size: 2rem;
-    }
-    
-    input[name="answer"] {
-        font-size: 2rem; 
-        width: 5rem; 
-        height: 2rem; 
-      }
-
-    button {
-        font-size: 1rem;
-        padding: 2px 2px;
-        margin: 0 2px;
-        cursor: pointer;
-        }
-    }
-
 /* button{
 border: 0.5px solid black;
 padding:0.5rem 1rem;
@@ -113,3 +81,36 @@ button {
     i {
         padding-right: 0.5rem;
       }
+
+      @media (max-width: 700px) {
+        section{
+            width: 100%;
+          }
+          #rightCol {
+            float: none;
+            padding-top: 50px;
+            height:70%;
+          }
+          #leftCol {
+            float: none;
+            
+            height:30%;
+          }
+          #questionTxt,#answerTxt{
+            font-size: 2rem;
+        }
+        
+        input[name="answer"] {
+            font-size: 2rem; 
+            width: 5rem; 
+            height: 2rem; 
+          }
+    
+        button {
+            font-size: 1rem;
+            padding: 5px 10px;
+            margin: 0 1px;
+            border-radius: 10px;
+            cursor: pointer;
+            }
+        }
