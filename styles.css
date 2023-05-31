@@ -53,6 +53,22 @@ input[name="answer"] {
         
         height:30%;
       }
+      #questionTxt,#answerTxt{
+        font-size: 2rem;
+    }
+    
+    input[name="answer"] {
+        font-size: 2rem; 
+        width: 5rem; 
+        height: 2rem; 
+      }
+
+    button {
+        font-size: 1rem;
+        padding: 2px 2px;
+        margin: 0 2px;
+        cursor: pointer;
+        }
     }
 
 /* button{
